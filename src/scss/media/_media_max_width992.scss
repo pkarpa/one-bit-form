@@ -1,0 +1,28 @@
+@media screen and (max-width: 991.99px) {
+    .type-documet{
+        max-width: 662px;
+        justify-content: center;
+        margin: 0 auto;
+        gap: 16px;
+    }
+
+    .control-box{
+        input{
+            display: none;
+        }
+    }
+
+    .gender-row{
+        .control-box{
+            margin-left: 38px;
+            label:before{
+                left: -40px;
+            }
+        }
+        
+    }
+
+    .address{
+        gap: 0;
+    }
+}

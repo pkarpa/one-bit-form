@@ -1,0 +1,12 @@
+@media screen and (max-width: 1024.99px) {
+    .profile-title{
+        margin-bottom: 30px;
+    }
+    
+    .input-row{
+        flex-wrap: wrap;
+        .input-box{
+            width: 100%;
+        }
+    }
+}

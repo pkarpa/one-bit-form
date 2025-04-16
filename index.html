@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="./src/scss/style.scss">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/dark.css">
+  </head>
+  <body>
+    <section class="profile">
+      <div class="container">
+        <h3 class="profile-title">профіль</h3>
+        <div class="profile-content">
+          <div class="profile-verefication">
+            <div class="verefication-wrapper">
+              <h4 class="verefication-title">верифікація</h4>
+              <a href="#" class="verefication-status status-failed">верефікацію не пройдено</a>
+            </div>
+            <div class="verification-description">Пройдіть верифікацію особи та отримайте можливість здійснювати обмін фіатних валют та доступ до реферальної програми</div>
+          </div>
+          
+          <form action="">
+            <fieldset>
+              <legend>країна знаходження</legend>
+              <div class="input-box country">
+                <select name="country" id="country" placeholder="країна">
+                  <option value="ua">Україна</option>
+                  <option value="pl">Польща</option>
+                  <option value="chz">Чехія</option>
+                </select>
+              </div>
+            </fieldset>
+            
+            <fieldset>
+              <legend>особиста інформаія</legend>
+              <div class="input-box">
+                <input type="text" placeholder="ім'я">
+              </div>
+              <div class="input-box">
+                <input type="text" placeholder="прізвище">
+              </div>
+              <div class="input-box">
+                <input type="text" placeholder="по батькові">
+              </div>
+              <div class="input-box">
+                <input type="text" placeholder="телефон">
+              </div>
+              <div class="input-box">
+                <label for="date">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 8.94118V4.35294C1 3.80066 1.44772 3.35294 2 3.35294H18C18.5523 3.35294 19 3.80066 19 4.35294V8.94118M1 8.94118L1 18C1 18.5523 1.44772 19 2 19H18C18.5523 19 19 18.5523 19 18V8.94118M1 8.94118H19M5.5 0V5.58824M14.5 0V5.58824" stroke="#F7FFEE" stroke-width="2"/>
+                  </svg>
+                </label>
+                <input id="date" type="date" placeholder="дата народження">
+              </div>
+
+              <div class="sub-block">
+                <h6 class="sub-block-title">стать</h6>
+                <div class="input-row gender-row">
+                  <div class="control-box">
+                    <input id="female" type="radio" name="gender">
+                    <label for="female">жіноча</label>
+                  </div>
+                  <div class="control-box">
+                    <input id="male" type="radio"  name="gender">
+                    <label for="male">чоловіча</label>
+                  </div>
+                </div>
+              </div> 
+            </fieldset>
+
+            <fieldset>
+              <legend>адреса проживання</legend>
+              <div class="input-box">
+                <input type="text" placeholder="місто">
+              </div>
+              <div class="input-box">
+                <input type="text" placeholder="вулиця">
+              </div>
+              <div class="input-row address">
+                <div class="input-box">
+                  <input type="text" placeholder="будинок">
+                </div>
+                <div class="input-box">
+                  <input type="text" placeholder="квартира">
+                </div>
+                <div class="input-box lst">
+                  <input type="text" placeholder="індекс">
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>підтвердження особистості</legend>
+              <div class="sub-block document-block">
+                <h6 class="sub-block-title">тип документу</h6>
+                <div class="input-row type-documet">
+                  <div class="control-box">
+                    <input id="passport" type="radio" name="document-type">
+                    <label for="passport">паспорт</label>
+                  </div>
+                  <div class="control-box">
+                    <input id="crw-passport" type="radio" name="document-type">
+                    <label for="crw-passport">закордонний паспорт</label>
+                  </div>
+                  <div class="control-box">
+                    <input id="passport" type="radio" name="document-type">
+                    <label for="passport">ID-картка</label>
+                  </div>
+                  <div class="control-box">
+                    <input id="passport" type="radio" name="document-type">
+                    <label for="passport">посвідчення водія</label>
+                  </div>
+                </div>
+              </div> 
+              <div class="sub-block">
+                <h6 class="sub-block-title">завантажте документ</h6>
+                <div class="control-box">
+                  <input id="file" class="file custom-file" type="file" name="file">
+                  <label for="file" class="file">
+                    <span class="label-content"><span class="color-white">перша сторінка </span><span class="go-here">перетягніть сюди або </span>&nbsp;<span class="color-brand"> оберіть файл</span></span>
+                    <span class="file-name"></span>
+                  </label>
+                </div>
+              </div>
+              
+              <div class="term-wrapper">
+                <input id="term" class="toggle" type="checkbox" name="term">
+                <label for="term"></label>
+                <div class="term-colum">
+                  <h6>немає терміну дії</h6>
+                  <p>за умови відсутності терміну дії документу</p>
+                </div>
+              </div>
+              <div class="input-box term-date">
+                <label for="date">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 8.94118V4.35294C1 3.80066 1.44772 3.35294 2 3.35294H18C18.5523 3.35294 19 3.80066 19 4.35294V8.94118M1 8.94118L1 18C1 18.5523 1.44772 19 2 19H18C18.5523 19 19 18.5523 19 18V8.94118M1 8.94118H19M5.5 0V5.58824M14.5 0V5.58824" stroke="#F7FFEE" stroke-width="2"/>
+                  </svg>
+                </label>
+                <input id="date" type="date" placeholder="термін дії документу">
+              </div>
+            </fieldset>
+            <button class="btn btn-primary">продовжити</button>
+           
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="/src/js/nice-select2.js"></script>
+    <script src="/src/js/main.js"></script>
+  </body>
+</html>
